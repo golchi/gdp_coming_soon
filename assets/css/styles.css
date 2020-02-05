@@ -1,0 +1,156 @@
+body{
+ background-color: white;
+ background-image: url('../img/fond_page.png');
+ background-repeat: no-repeat;
+ background-size: auto;
+ color: white;
+ width: 99%
+}    
+.content {
+  margin-top: 3%;
+}    
+h1,h3 {
+ font-family:'Great Vibes', cursive;
+}    
+.overlay {
+  position: fixed; /* Sit on top of the page content */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(184, 103, 84, 0.39);
+  z-index: 0; /* Specify a stack order in case you're using a different order for other elements */
+}
+.icon_row {
+  margin-top: 5%;
+}
+.icon_wrapper:hover {
+  color: gold;
+}
+.icon_wrapper {
+  background-color: rgb(137,20,13);
+  color: white;
+  padding: 15px 16px;
+  /*height: 50px;
+  margin: 10px;
+  width: 60px;*/
+}    
+.icon_wrapper .fa {
+    font-size: 25px;
+}    
+/* Newsletter */
+.newsletter-subscribe {
+  color: #222222;
+  /*background-color: #fff;*/
+  /*padding: 50px 0;*/
+}
+
+.newsletter-subscribe .container {
+  background-color: rgba(255,255,255,0.6);
+  padding-bottom: 20px;
+}    
+.newsletter-subscribe p {
+  line-height: 1.5;
+}
+
+.newsletter-subscribe h2 {
+  font-size: 24px;
+  font-weight: bold;
+  /*margin-bottom: 25px;*/
+  line-height: 1.5;
+  padding-top: 0;
+  margin-top: 0;
+  color: inherit;
+}
+
+.newsletter-subscribe .intro {
+  font-size: 16px;
+  text-align: center;
+}
+
+.newsletter-subscribe .intro p {
+  margin-bottom: 5px;
+}
+
+.newsletter-subscribe form {
+  justify-content: center;
+}
+
+.newsletter-subscribe form .form-control {
+  background: #eff1f4;
+  border: none;
+  border-radius: 3px;
+  box-shadow: none;
+  outline: none;
+  color: inherit;
+  text-indent: 9px;
+  height: 45px;
+  margin-right: 10px;
+  min-width: 250px;
+}
+
+.newsletter-subscribe form .btn {
+  padding: 16px 32px;
+  border: none;
+  background: none;
+  box-shadow: none;
+  text-shadow: none;
+  opacity: 0.9;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 13px;
+  letter-spacing: 0.4px;
+  line-height: 1;
+}
+
+.newsletter-subscribe form .btn:hover {
+  opacity: 1;
+}
+
+.newsletter-subscribe form .btn:active {
+  transform: translateY(1px);
+}
+
+.newsletter-subscribe form .btn-primary {
+  background-color: #381209 !important;
+  color: #fff;
+  outline: none !important;
+}
+/* Countdown */
+#countdown {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}    
+
+#countdown li{
+    color: white;
+    margin:10px;
+    font-size : 45px;
+    list-style : none;    
+   font-family:'Great Vibes', cursive;
+   text-align: center;
+}
+.logo {
+   width: 100px;    
+}
+.btn.btn-primary {
+  /*background-color: #381209;
+  border: solid 1px #381209;
+  */
+}
+@media (min-width: 720px) {
+    body {
+      background-position-y: center;
+    }
+}
+@media (max-width: 360px) {
+    .newsletter-subscribe {
+       width: 104%;
+    }
+    #countdown li {
+        font-size:210%;
+    }
+}
