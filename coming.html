@@ -27,16 +27,16 @@
             <section>
               <ul id="countdown">
                 <li><span class="days timenumbers">01</span>
-                  <p class="timeRefDays timedescription">days</p>
+                  <p class="timeRefDays timedescription">jours</p>
                 </li>
                 <li><span class="hours timenumbers">00</span>
-                  <p class="timeRefHours timedescription">hours</p>
+                  <p class="timeRefHours timedescription">heures</p>
                 </li>
                 <li><span class="minutes timenumbers">00</span>
                   <p class="timeRefMinutes timedescription">minutes</p>
                 </li>
                 <li><span class="seconds timenumbers yellow-text">00</span>
-                  <p class="timeRefSeconds timedescription">seconds</p>
+                  <p class="timeRefSeconds timedescription">secondes</p>
                 </li>
               </ul>
             </section>    
@@ -45,14 +45,16 @@
         </div>
     </section>
     <div class="newsletter-subscribe">            
-        <div class="container col-md-4" style="display:flex; flex-direction:column;">
+        <div class="container col-md-4" style="display:flex; flex-direction:column;"  id="mc_embed_signup_scroll">
             <div class="intro">
                 <h2 class="text-center">Gardons le contact</h2>
-                <p class="text-center">Saisissez votre email pour être informé.</p>
+                <!--p class="text-center">Saisissez votre email pour être informé.</p-->
             </div>
-            <form class="form-inline" method="post">
-                <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Email"></div>
-                <div class="form-group"><button class="btn btn-primary" type="submit">Enregistrer</button></div>
+            <form action="https://grainesdepensees.us4.list-manage.com/subscribe/post?u=cadf23d07928043943d31e5d6&amp;id=328d5b4d8e" 
+                    method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-inline" 
+                    target="_blank" novalidate>
+                <!--div class="form-group"><input class="form-control" id="mce-EMAIL" type="email" name="email" placeholder="Email" required></div-->
+                <div class="form-group"><button class="btn btn-primary" type="submit" id="mc-embedded-subscribe">S'inscrire &agrave; la newsletter</button></div>
             </form>
             <div class="icon_row">    
                 <a class="border rounded-circle icon_wrapper" href="#">
@@ -62,21 +64,7 @@
         </div>    
     </div>
     <script src="dist/js/script.js"></script>
-    <script type="text/javascript">
-    //Provide the plugin settings
-    $("#countdown").countdown({
-            //The countdown end date
-            date: "29 February 2020 00:00:00",
-
-            // on (03:07:52) | off (3:7:52) - two_digits set to ON maintains layout consistency
-            format: "on"
-        },
-
-        function() {
-            // This will run when the countdown ends
-            //alert("We're Out Now");
-        });
-        </script>
+    <script type="text/javascript">$("#countdown").countdown({date: "29 February 2020 00:00:00",format: "on"});</script>
 </body>
 
 </html>
