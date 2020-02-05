@@ -1,0 +1,17 @@
+{
+    "name": "graines-de-pensees",
+    "version": "1.0.0",
+    "author": "GdP-Golchi",
+    "description": " Nouvelle version a venir du site de GdP",
+    "private": true,
+    "license": "",
+    "devDependencies": {
+        "grunt": "^1.0.4",
+        "grunt-contrib-cssmin": "*",
+        "grunt-contrib-htmlmin": "^3.1.0",
+        "grunt-contrib-jshint": "*",
+        "grunt-contrib-qunit": "*",
+        "grunt-contrib-uglify": "*",
+        "matchdep": "^2.0.0"
+    }
+}

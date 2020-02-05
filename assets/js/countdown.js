@@ -71,23 +71,21 @@
 
 })(jQuery);
 
-
-
+/*
 //Provide the plugin settings
 $("#countdown").countdown({
-        //The countdown end date
-        date: "29 February 2020 00:00:00",
+    //The countdown end date
+    date: "29 February 2020 00:00:00",
 
-        // on (03:07:52) | off (3:7:52) - two_digits set to ON maintains layout consistency
-        format: "on"
-    },
+    // on (03:07:52) | off (3:7:52) - two_digits set to ON maintains layout consistency
+    format: "on"
+},
 
-    function() {
-        // This will run when the countdown ends
-        //alert("We're Out Now");
-    });
-
-
+function() {
+    // This will run when the countdown ends
+    //alert("We're Out Now");
+});
+*/
 function setHeights() {
     var windowHeight = $(window).height();
     $('.slide').height(windowHeight);

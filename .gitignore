@@ -1,1 +1,4 @@
 useless/
+dist/
+node_modules/
+index.html

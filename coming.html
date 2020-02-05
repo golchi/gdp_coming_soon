@@ -4,18 +4,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Graines de Pensées</title>
-    <link rel="icon" type="image/png" sizes="120x140" href="assets/img/logo_trans.png">
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="icon" type="image/png" sizes="120x140" href="img/logo_trans.png">
     <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="dist/css/style.min.css">
 </head>
 <body>
     <div class="overlay"></div>
     <section class="content">
         <div class="row">
             <div class="col">
-                <div class="text-center logo_wrapper"><img class="logo" src="assets/img/logo_trans.png"></div>
+                <div class="text-center logo_wrapper"><img class="logo" src="img/logo_trans.png"></div>
             </div>
         </div>
         <div class="row title">
@@ -56,15 +54,29 @@
                 <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Email"></div>
                 <div class="form-group"><button class="btn btn-primary" type="submit">Enregistrer</button></div>
             </form>
-            <div align="center" class="icon_row">    
+            <div class="icon_row">    
                 <a class="border rounded-circle icon_wrapper" href="#">
                     <i class="fa fa-facebook"></i>
                 </a>
             </div>    
         </div>    
     </div>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/countdown.js"></script>
+    <script src="dist/js/script.js"></script>
+    <script type="text/javascript">
+    //Provide the plugin settings
+    $("#countdown").countdown({
+            //The countdown end date
+            date: "29 February 2020 00:00:00",
+
+            // on (03:07:52) | off (3:7:52) - two_digits set to ON maintains layout consistency
+            format: "on"
+        },
+
+        function() {
+            // This will run when the countdown ends
+            //alert("We're Out Now");
+        });
+        </script>
 </body>
 
 </html>

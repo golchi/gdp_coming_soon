@@ -1,6 +1,6 @@
 body{
  background-color: white;
- background-image: url('../img/fond_page.png');
+ background-image: url('../../img/fond_page.png');
  background-repeat: no-repeat;
  background-size: auto;
  color: white;
@@ -25,6 +25,7 @@ h1,h3 {
 }
 .icon_row {
   margin-top: 5%;
+  text-align: center;
 }
 .icon_wrapper:hover {
   color: gold;
@@ -135,11 +136,6 @@ h1,h3 {
 }
 .logo {
    width: 100px;    
-}
-.btn.btn-primary {
-  /*background-color: #381209;
-  border: solid 1px #381209;
-  */
 }
 @media (min-width: 720px) {
     body {
